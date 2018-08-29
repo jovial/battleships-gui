@@ -30,14 +30,8 @@ def state(rows, cols):
     return a
 
 def submitMove(x,y):
-    data = parse.urlencode({
-        "x": x,
-        "y:": y
-    }
-    ).encode()
-    req = request.Request(GAME_ENDPOINT, data=data, method='GET')
-    resp = request.urlopen(req)
-    print(resp)
+    req = request.Request("{}?x={}&y={}".format(GAME_ENDPOINT, x,y), method='GET')
+    request.urlopen(req)
 
 
 def genButton(state, x, y):
