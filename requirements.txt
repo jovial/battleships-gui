@@ -15,7 +15,7 @@ Kivy==1.10.1
 MarkupSafe==1.0
 meld==3.19.0
 packaging==17.1
-paramiko==2.4.1
+paramiko==2.10.1
 ply==3.11
 pulsemixer==1.4.0
 pyasn1==0.4.3
